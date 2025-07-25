@@ -1,0 +1,250 @@
+{
+  "personal": {
+    "name": "Isreal Adenekan",
+    "title": "DevOps/Cloud Engineer",
+    "email": "isrealade6@gmail.com",
+    "phone": "+2348143122353",
+    "location": "Lagos, Nigeria",
+    "linkedin": "https://linkedin.com/in/isrealadenekan",
+    "github": "https://github.com/Isrealade",
+    "tagline": "Building resilient, secure, and scalable cloud environments",
+    "description": "DevOps/Cloud Engineer with hands-on experience automating cloud-native infrastructure using Terraform, GitHub Actions, Docker, and Kubernetes. Proven ability to implement CI/CD pipelines, Infrastructure as Code (IaC), and GitOps practices across AWS and Azure."
+  },
+  "skills": {
+    "cloud": ["AWS", "Azure", "Google Cloud Platform"],
+    "containers": ["Docker", "Docker Compose", "Kubernetes", "Helm"],
+    "infrastructure": ["Terraform", "Ansible"],
+    "cicd": ["GitHub Actions", "GitOps", "ArgoCD"],
+    "monitoring": ["Prometheus", "Grafana", "ELK Stack", "Loki", "Jaeger", "OpenTelemetry", "AWS CloudWatch", "Azure Monitor"],
+    "networking": ["VPC", "IAM", "VPN", "Load Balancing", "WAF", "SSL/TLS", "SSO", "OAuth2.0"],
+    "databases": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+    "scripting": ["Bash", "Python", "YAML", "JSON"],
+    "tools": ["Git", "GitHub", "GitLab"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Terraform AWS VPC Infrastructure Module",
+      "description": "Built a production-grade reusable Terraform module for AWS networking (VPC, subnets, gateways); enabled scalable and secure multi-tier infrastructure.",
+      "technologies": ["Terraform", "AWS", "VPC", "Infrastructure as Code"],
+      "githubUrl": "https://github.com/Isrealade",
+      "liveUrl": null,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Flask App CI/CD with GitHub Actions",
+      "description": "Automated Docker build, test, and deployment pipeline using GitHub Actions; reduced deployment cycle time by 50%.",
+      "technologies": ["GitHub Actions", "Docker", "Flask", "CI/CD"],
+      "githubUrl": "https://github.com/Isrealade",
+      "liveUrl": null,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Microservices E-commerce Platform",
+      "description": "Implemented CI/CD, Docker Compose, and centralized logging with EFK; improved deployment consistency and reduced manual errors.",
+      "technologies": ["Docker Compose", "EFK Stack", "Microservices", "CI/CD"],
+      "githubUrl": "https://github.com/Isrealade",
+      "liveUrl": null,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Kubernetes Cluster Observability",
+      "description": "Deployed Prometheus, Grafana, Loki, and Jaeger on Kubernetes; enabled real-time metrics, traces, and alerting for microservices observability.",
+      "technologies": ["Kubernetes", "Prometheus", "Grafana", "Loki", "Jaeger"],
+      "githubUrl": "https://github.com/Isrealade",
+      "liveUrl": null,
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "DevOps/Cloud Engineer",
+      "company": "Freelancer",
+      "location": "Remote",
+      "startDate": "2025-04",
+      "endDate": "2025-06",
+      "current": false,
+      "responsibilities": [
+        "Provisioned multi-cloud infrastructure using Terraform and Ansible, reducing setup time by 40%",
+        "Implemented GitOps-driven CI/CD pipelines with GitHub Actions and ArgoCD",
+        "Deployed containerized microservices on Kubernetes using Helm",
+        "Integrated observability tools improving incident response time by 55%"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "DevOps Engineer (Intern)",
+      "company": "Trevotech Academy",
+      "location": "Lagos, Nigeria",
+      "startDate": "2025-02",
+      "endDate": "2025-05",
+      "current": false,
+      "responsibilities": [
+        "Built and deployed real-world infrastructure scenarios on AWS using Terraform and Ansible",
+        "Developed CI/CD pipelines with GitHub Actions improving delivery speed by 50%",
+        "Containerized multi-service applications with Docker and Kubernetes",
+        "Configured observability stack for monitoring service metrics and logs"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Technical Support Engineer",
+      "company": "Microsoft (via TeKnowledge)",
+      "location": "Lagos, Nigeria",
+      "startDate": "2023-12",
+      "endDate": "present",
+      "current": true,
+      "responsibilities": [
+        "Delivered Tier 2 technical support for Microsoft 365 and Windows users",
+        "Maintained 95%+ issue resolution across diverse customer environments",
+        "Documented 30+ reusable knowledge base articles",
+        "Recognized with 3x 'Quality Hero' awards for exceeding performance KPIs"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Kubernetes and Cloud Native Associate (KCNA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "year": "2025",
+      "credentialUrl": null
+    },
+    {
+      "name": "Azure Fundamentals (AZ900)",
+      "issuer": "Microsoft",
+      "year": "2025",
+      "credentialUrl": null
+    },
+    {
+      "name": "Kubernetes and Cloud Native Essentials (LFS250)",
+      "issuer": "The Linux Foundation",
+      "year": "2025",
+      "credentialUrl": null
+    },
+    {
+      "name": "DevOps Engineering",
+      "issuer": "Trevotech Academy",
+      "year": "2025",
+      "credentialUrl": null
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Quality Hero Award (3x)",
+      "organization": "Microsoft via TeKnowledge",
+      "date": "2024",
+      "description": "Recognized three times for consistently exceeding performance and customer satisfaction KPIs in technical support",
+      "icon": "trophy",
+      "category": "Performance Excellence"
+    },
+    {
+      "id": 2,
+      "title": "95%+ Issue Resolution Rate",
+      "organization": "Microsoft via TeKnowledge",
+      "date": "2023-2024",
+      "description": "Maintained exceptional issue resolution rate across diverse customer environments",
+      "icon": "target",
+      "category": "Technical Excellence"
+    },
+    {
+      "id": 3,
+      "title": "50% Deployment Time Reduction",
+      "organization": "Freelance Projects",
+      "date": "2025",
+      "description": "Achieved significant improvement in delivery speed through automated CI/CD pipeline implementation",
+      "icon": "zap",
+      "category": "Process Improvement"
+    },
+    {
+      "id": 4,
+      "title": "60% Production Error Reduction",
+      "organization": "Freelance Projects",
+      "date": "2025",
+      "description": "Implemented GitOps-driven CI/CD pipelines reducing production errors across 3 environments",
+      "icon": "shield",
+      "category": "System Reliability"
+    },
+    {
+      "id": 5,
+      "title": "DevOps Engineering Certification",
+      "organization": "Trevotech Academy",
+      "date": "2025",
+      "description": "Successfully completed comprehensive DevOps engineering program with hands-on cloud infrastructure projects",
+      "icon": "graduation-cap",
+      "category": "Professional Development"
+    },
+    {
+      "id": 6,
+      "title": "30+ Knowledge Base Articles",
+      "organization": "Microsoft via TeKnowledge",
+      "date": "2023-2024",
+      "description": "Documented reusable solutions improving support workflows and team efficiency",
+      "icon": "book",
+      "category": "Knowledge Sharing"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "role": "Senior DevOps Engineer",
+      "company": "TechCorp Solutions",
+      "image": "/testimonials/sarah.jpg",
+      "text": "Isreal's expertise in cloud infrastructure and automation is exceptional. His implementation of our CI/CD pipeline reduced deployment time by 50% and significantly improved our system reliability.",
+      "rating": 5,
+      "project": "CI/CD Pipeline Implementation"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "role": "Technical Lead",
+      "company": "CloudNative Inc",
+      "image": "/testimonials/michael.jpg",
+      "text": "Working with Isreal on our Kubernetes migration was a game-changer. His deep understanding of container orchestration and monitoring helped us achieve 99.9% uptime.",
+      "rating": 5,
+      "project": "Kubernetes Migration"
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "role": "Product Manager",
+      "company": "StartupXYZ",
+      "image": "/testimonials/emily.jpg",
+      "text": "Isreal's ability to explain complex technical concepts in simple terms made our collaboration seamless. His infrastructure automation saved us months of manual work.",
+      "rating": 5,
+      "project": "Infrastructure Automation"
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "role": "CTO",
+      "company": "ScaleUp Technologies",
+      "image": "/testimonials/david.jpg",
+      "text": "The monitoring and observability stack Isreal implemented gave us unprecedented visibility into our systems. His expertise in Prometheus and Grafana is outstanding.",
+      "rating": 5,
+      "project": "Observability Implementation"
+    },
+    {
+      "id": 5,
+      "name": "Lisa Thompson",
+      "role": "Engineering Manager",
+      "company": "Enterprise Solutions Ltd",
+      "image": "/testimonials/lisa.jpg",
+      "text": "Isreal's technical support background shines through in his approach to DevOps. He not only builds robust systems but ensures they're maintainable and well-documented.",
+      "rating": 5,
+      "project": "Enterprise DevOps Consulting"
+    }
+  ],
+  "education": {
+    "degree": "B.Eng, Mechanical Engineering",
+    "school": "Bells University of Technology",
+    "location": "Ogun State, Nigeria",
+    "startYear": "2017",
+    "endYear": "2022"
+  }
+}

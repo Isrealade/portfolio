@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme variables */
+  --foreground-rgb: 31, 41, 55;
+  --background-start-rgb: 249, 250, 251;
+  --background-end-rgb: 255, 255, 255;
+  --surface-rgb: 255, 255, 255;
+  --surface-secondary-rgb: 243, 244, 246;
+  --text-primary-rgb: 31, 41, 55;
+  --text-secondary-rgb: 107, 114, 128;
+  --border-rgb: 229, 231, 235;
+}
+
+.dark {
+  /* Dark theme variables */
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42;
+  --background-end-rgb: 30, 41, 59;
+  --surface-rgb: 30, 41, 59;
+  --surface-secondary-rgb: 15, 23, 42;
+  --text-primary-rgb: 255, 255, 255;
+  --text-secondary-rgb: 156, 163, 175;
+  --border-rgb: 75, 85, 99;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Terminal cursor animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.terminal-cursor {
+  animation: blink 1s infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Theme Variables */
+:root {
+  /* Dark Theme (Default) */
+  --section-bg-primary: #0f172a;
+  --section-bg-secondary: rgba(17, 24, 39, 0.5);
+  --card-bg: rgba(31, 41, 55, 0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --border-primary: rgba(75, 85, 99, 0.5);
+  --nav-bg: rgba(15, 23, 42, 0.95);
+}
+
+.light {
+  /* Light Theme */
+  --section-bg-primary: #f8fafc;
+  --section-bg-secondary: #ffffff;
+  --card-bg: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --border-primary: #e2e8f0;
+  --nav-bg: rgba(248, 250, 252, 0.95);
+}
+
+/* Global styling */
+html {
+  background-color: var(--section-bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+body {
+  background-color: var(--section-bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make sure all elements inherit theme variables */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Consistent component styling */
+@layer components {
+  .section-bg-primary {
+    background-color: var(--section-bg-primary);
+  }
+  
+  .section-bg-secondary {
+    background-color: var(--section-bg-secondary);
+  }
+  
+  .card-bg {
+    background-color: var(--card-bg);
+  }
+  
+  .text-primary {
+    color: var(--text-primary);
+  }
+  
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  
+  .text-tertiary {
+    color: var(--text-tertiary);
+  }
+  
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+  
+  .hover-border {
+    @apply hover:border-primary-500/50 transition-colors;
+  }
+  
+  .placeholder-tertiary::placeholder {
+    color: var(--text-tertiary);
+  }
+}
