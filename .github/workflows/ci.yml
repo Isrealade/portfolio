@@ -9,6 +9,12 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  NEXT_PUBLIC_CUSTOM_DOMAIN: 'true'
+  GITHUB_ACTIONS: 'true'
+  GITHUB_PAGES_REPO: 'portfolio'
+
+
 jobs:
   # Integration tests for all branches
   test:
