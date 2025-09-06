@@ -1,36 +1,33 @@
 /** @type {import('next').NextConfig} */
 
-// Detect GitHub Actions (for repo-based GitHub Pages)
-const isGithubActions = process.env.GITHUB_ACTIONS === 'true' || false
+// Determine if we're building for GitHub Pages
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 const repoName = process.env.GITHUB_PAGES_REPO || 'portfolio'
 
-// Detect if using custom domain
-const isCustomDomain = process.env.NEXT_PUBLIC_CUSTOM_DOMAIN === 'true'
-
-// basePath: prefix for routes
-// assetPrefix: prefix for static assets
-const basePath = isGithubActions && !isCustomDomain ? `/${repoName}` : ''
-const assetPrefix = isGithubActions && !isCustomDomain ? `/${repoName}` : ''
+// For GitHub Pages, we need to set the correct base path
+// For local development or other deployments, we use root path
+const basePath = isGithubActions ? `/${repoName}` : ''
+const assetPrefix = isGithubActions ? `/${repoName}` : ''
 
 const nextConfig = {
-  output: 'export',       // static export
-  trailingSlash: true,    // required for GitHub Pages
-  basePath: basePath,     
-  assetPrefix: assetPrefix,
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true,    // required for static export
+    unoptimized: true
   },
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  // Ensure static optimization works properly
   experimental: {
-    optimizeCss: false,   // avoid breaking Tailwind
-  },
+    optimizeCss: false,
+  }
 }
 
 console.log('Next.js Config:', {
   isGithubActions,
   repoName,
   basePath,
-  assetPrefix,
-  isCustomDomain,
+  assetPrefix
 })
 
 module.exports = nextConfig
