@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing DevOps and Cloud Engineering expertise with an innovative dual-interface design - featuring both a traditional GUI and a fully functional Linux terminal interface.
 
-🔗 **[Live Demo](https://yourusername.github.io/portfolio)** | 🐧 **Try Terminal Mode!**
+🔗 **[Live Demo](https://isrealade.github.io/portfolio)** | 🐧 **Try Terminal Mode!**
 
 ## 🚀 Features
 
